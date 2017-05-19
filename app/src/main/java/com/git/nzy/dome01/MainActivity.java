@@ -14,6 +14,10 @@ import android.widget.ListView;
 import com.git.nzy.dome01.activity.Activity_01;
 import com.git.nzy.dome01.activity.Activity_02;
 import com.git.nzy.dome01.activity.Activity_03;
+import com.git.nzy.dome01.activity.Activity_04;
+import com.git.nzy.dome01.activity.Activity_05;
+import com.git.nzy.dome01.activity.Activity_06;
+import com.git.nzy.dome01.activity.Activity_07;
 import com.git.nzy.dome01.base.BaseActivity;
 
 import java.util.ArrayList;
@@ -39,6 +43,13 @@ public class MainActivity  extends BaseActivity {
         initData("CoordinatorLayout布局",new Activity_01());
         initData("CoordinatorLayout布局",new Activity_02());
         initData("二维码",new Activity_03());
+        initData("签字",new Activity_04());
+        initData("悬浮窗",new Activity_05());
+        initData("时间轮滚选择器",new Activity_06());
+        initData("转扬方式",new Activity_07());
+        initData("悬浮窗",new Activity_05());
+        initData("悬浮窗",new Activity_05());
+
     }
 
     private void initData(String s,Activity a) {

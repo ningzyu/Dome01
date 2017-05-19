@@ -23,10 +23,14 @@
     <!-- 震动 -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!-- 内存卡读 -->
+    <!-- 内存卡读写 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <!-- 网络 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:name=".App.MyApplication"
@@ -46,7 +50,16 @@
         <activity android:name=".activity.Activity_02" />
         <activity android:name=".activity.Activity_03" />
         <activity android:name=".activity.act1.ThreeActivity" />
-        <activity android:name=".activity.act1.SecondActivity"></activity>
+        <activity android:name=".activity.act1.SecondActivity" />
+        <activity android:name=".activity.Activity_04" />
+        <activity android:name=".activity.Activity_05" />
+        <activity android:name=".activity.Activity_06" />
+
+        <service android:name=".service.MyWinService1" />
+        <service android:name=".service.MyWinService2" />
+
+        <activity android:name=".activity.Activity_07"></activity>
+        <activity android:name=".activity.a7_view.A7_SecondActivity"/>
     </application>
 
 </manifest>
